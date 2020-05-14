@@ -1,0 +1,225 @@
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 0x989680
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        6484170
+   > block timestamp:     1589417974
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.954481369
+   > gas used:            210237
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00210237 ETH
+
+   -------------------------------------
+   > Total cost:          0.00210237 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'FarmerRole'
+   ----------------------
+   > block number:        6484172
+   > block timestamp:     1589417982
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.950051059
+   > gas used:            415668
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00415668 ETH
+
+
+   Deploying 'DistributorRole'
+   ---------------------------
+   > block number:        6484173
+   > block timestamp:     1589417989
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.946584629
+   > gas used:            346643
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00346643 ETH
+
+
+   Deploying 'RetailerRole'
+   ------------------------
+   > block number:        6484174
+   > block timestamp:     1589417996
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.942427709
+   > gas used:            415692
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00415692 ETH
+
+
+   Deploying 'ConsumerRole'
+   ------------------------
+   > block number:        6484175
+   > block timestamp:     1589418002
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.938270789
+   > gas used:            415692
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00415692 ETH
+
+
+   Deploying 'SupplyChain'
+   -----------------------
+   > block number:        6484176
+   > block timestamp:     1589418011
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.918777789
+   > gas used:            1949300
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.019493 ETH
+
+   -------------------------------------
+   > Total cost:          0.03542995 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.03753232 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 0x989680
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xe2bc39c420fa1b3dcee1016195c1498e8ccf295d801f7e1f6611eed91abeb521
+   > Blocks: 1            Seconds: 16
+   > contract address:    0xc5e006AE418E7e81255b96970d3f666544f9C823
+   > block number:        6484173
+   > block timestamp:     1589418035
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.954331369
+   > gas used:            225237
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00225237 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00225237 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'FarmerRole'
+   ----------------------
+   > transaction hash:    0xaaac199420fe8626da45c30a146b6f79af1951b28aef468462bc50b6e4e5d213
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x6916147792613C8Bb22eF597504eB1B013372627
+   > block number:        6484175
+   > block timestamp:     1589418065
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.949601059
+   > gas used:            430668
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00430668 ETH
+
+
+   Deploying 'DistributorRole'
+   ---------------------------
+   > transaction hash:    0x3686cce495f8ad79e23f428e02eeab924d25180c3bf5254e0589808e8ead3dda
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x61f8c97D95e6C6a1bFfFD9e816C1aB65Fd49314a
+   > block number:        6484176
+   > block timestamp:     1589418080
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.945984629
+   > gas used:            361643
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00361643 ETH
+
+
+   Deploying 'RetailerRole'
+   ------------------------
+   > transaction hash:    0x0a6a78ca98f06a01dd9e2d12690f4ed94e99b69d9e0f784e23aa899d2f7350af
+   > Blocks: 1            Seconds: 12
+   > contract address:    0xCDcFbf294e0C334c693eF395F1BB3E0fcE127633
+   > block number:        6484177
+   > block timestamp:     1589418095
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.941677709
+   > gas used:            430692
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00430692 ETH
+
+
+   Deploying 'ConsumerRole'
+   ------------------------
+   > transaction hash:    0xc1b6f830c31e61ca16239ec75988b5282302c8ab6da666bf6fb8785824f00b66
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x5b6a56cF6F2DF8Eb6e380bAFc4Ebb704ddee7E91
+   > block number:        6484178
+   > block timestamp:     1589418110
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.937370789
+   > gas used:            430692
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00430692 ETH
+
+
+   Deploying 'SupplyChain'
+   -----------------------
+   > transaction hash:    0xaed5d5c99f7227b966f2277c39b6155a76a3f50819a615a683e660f410a5de0d
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x6E6f6915711768d9Caa7ce8D3fe7B1f30E411c2e
+   > block number:        6484179
+   > block timestamp:     1589418125
+   > account:             0xEd7EbF089f0D67308ADfeE24df299d73e3752942
+   > balance:             1.917427789
+   > gas used:            1994300
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.019943 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.03647995 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.03873232 ETH
