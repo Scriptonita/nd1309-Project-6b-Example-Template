@@ -16,7 +16,7 @@ contract SupplyChain is
     FarmerRole
 {
     // Define 'owner'
-    address owner;
+    // address owner;
 
     // Define a variable called 'upc' for Universal Product Code (UPC)
     uint256 upc;
@@ -73,12 +73,6 @@ contract SupplyChain is
     event Shipped(uint256 upc);
     event Received(uint256 upc);
     event Purchased(uint256 upc);
-
-    // Define a modifer that checks to see if msg.sender == owner of the contract
-    modifier onlyOwner() {
-        require(msg.sender == owner, "Error: onlyOwner required");
-        _;
-    }
 
     // Define a modifer that verifies the Caller
     modifier verifyCaller(address _address) {
@@ -173,16 +167,14 @@ contract SupplyChain is
     // and set 'sku' to 1
     // and set 'upc' to 1
     constructor() public payable {
-        owner = msg.sender;
+        // owner = msg.sender;
         sku = 1;
         upc = 1;
     }
 
     // Define a function 'kill' if required
-    function kill() public {
-        if (msg.sender == owner) {
-            selfdestruct(msg.sender);
-        }
+    function kill() public onlyOwner() {
+        selfdestruct(msg.sender);
     }
 
     // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'
@@ -194,7 +186,7 @@ contract SupplyChain is
         string memory _originFarmLatitude,
         string memory _originFarmLongitude,
         string memory _productNotes
-    ) public {
+    ) public onlyFarmer() {
         // Add the new item as part of Harvest
         items[_upc].sku = sku;
         items[_upc].upc = _upc;
@@ -264,6 +256,7 @@ contract SupplyChain is
     function buyItem(uint256 _upc)
         public
         payable
+        onlyDistributor()
         // Call modifier to check if upc has passed previous supply chain stage
         forSale(_upc)
         // Call modifer to check if buyer has paid enough
@@ -302,7 +295,8 @@ contract SupplyChain is
         public
         // Call modifier to check if upc has passed previous supply chain stage
         shipped(_upc)
-    // Access Control List enforced by calling Smart Contract / DApp
+        // Access Control List enforced by calling Smart Contract / DApp
+        onlyRetailer()
     {
         // Update the appropriate fields - ownerID, retailerID, itemState
         items[_upc].ownerID = msg.sender;
@@ -318,7 +312,8 @@ contract SupplyChain is
         public
         // Call modifier to check if upc has passed previous supply chain stage
         received(_upc)
-    // Access Control List enforced by calling Smart Contract / DApp
+        // Access Control List enforced by calling Smart Contract / DApp
+        onlyConsumer()
     {
         // Update the appropriate fields - ownerID, consumerID, itemState
         items[_upc].ownerID = msg.sender;
