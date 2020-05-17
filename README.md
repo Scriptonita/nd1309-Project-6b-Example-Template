@@ -4,13 +4,13 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 The DApp User Interface when running should look like...
 
-![truffle test](images/ftc_product_overview.png)
+![truffle test](images/product_overview.png)
 
-![truffle test](images/ftc_farm_details.png)
+![truffle test](images/farm_details.png)
 
-![truffle test](images/ftc_product_details.png)
+![truffle test](images/product_details.png)
 
-![truffle test](images/ftc_transaction_history.png)
+![truffle test](images/transaction_history.png)
 
 
 ## Getting Started
@@ -21,9 +21,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
 
-```
-Give examples (to be clarified)
-```
+![truffle test](images/utils_versions.png)
 
 ### Installing
 

@@ -49,3 +49,4 @@ v5.1.19
 ## web3 version number
 
 web3@1.2.1
+transaction_history
